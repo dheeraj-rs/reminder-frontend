@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.logobox {
+  -webkit-border-radius: 166px 83px 125px 67px;
+  -moz-border-radius: 166px 83px 125px 67px;
+  border-radius: 166px 83px 125px 67px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.shadows {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=0, Color=#000000)";
+  -moz-box-shadow: 0 0 14px 5px #000000;
+  -webkit-box-shadow: 0 0 14px 5px #000000;
+  box-shadow: 0 0 14px 5px #000000;
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=14, Direction=135, Color=#000000);
+}
+
+.shadows2 {
+  box-shadow: rgba(0, 0, 0, 0.233) 0px 25px 20px -20px;
+}
+.shadowsAll {
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.shadows3 {
+  box-shadow: rgba(139, 155, 156, 0.25) 0px 30px 60px -12px inset,
+    rgba(159, 187, 192, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* .react-calendar styles */
+.react-calendar {
+  width: max-content;
+}
+
+.react-calendar__navigation .react-calendar__navigation__arrow {
+  display: none;
+}
+
+.react-calendar__navigation .react-calendar__navigation__label {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.react-calendar__tile {
+  height: max-content;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-size: 10px;
+  color: #f5bd6c;
+}
+
+.react-calendar__tile--active {
+  background: #f7d57e;
+  color: white;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+  background: #f3a437;
+}
+
+.react-calendar__tile,
+.react-calendar__month-view__days__day {
+  font-size: 10px;
+}
+
+@keyframes textclip {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.css-1t1abw3 {
+  background-color: rgb(0, 76, 109) !important;
+  background-image: linear-gradient(
+    -225deg,
+    rgb(0, 76, 109) 0%,
+    rgb(255, 255, 255) 29%,
+    rgb(20, 120, 167) 67%,
+    rgb(111, 177, 191) 100%
+  ) !important;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite; /* Apply the keyframes animation here */
+  display: inline-block;
+}
+
+/* Add a new style */
+.new-style {
+  font-weight: bold;
+  font-size: 24px;
+  color: #333;
+}
